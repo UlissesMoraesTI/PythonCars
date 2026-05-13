@@ -95,7 +95,7 @@ Analista de sistemas há 28 anos, Sr em Tecnologias voltadas para MAINFRAME.
 
 ## Banco de Dados:
 
-![SQLserver](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![SQLServer](https://img.shields.io/badge/SQLServer-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=for-the-badge&logo=postgresql)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
