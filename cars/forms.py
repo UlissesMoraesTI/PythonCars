@@ -42,3 +42,16 @@ class CarModelForm(forms.ModelForm):
         if not photo:
             raise forms.ValidationError("A foto é obrigatória.")
         return photo          
+
+    def clean_year_factory(self):
+        year_factory = self.cleaned_data.get('year_factory')
+        if year_factory < 1970:
+            raise forms.ValidationError("Ano fabricação não pode ser menor que 1970.")
+        return year_factory                  
+    
+    def clean_year_model(self):
+        year_model = self.cleaned_data.get('year_model')
+        if year_model < 1970:
+            raise forms.ValidationError("Ano modelo não pode ser menor que 1970.")
+        return year_model
+    
