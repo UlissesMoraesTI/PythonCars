@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from cars.views import cars_view, new_car_view, CarsView, NewCarView
+from cars.views import cars_view, new_car_view, CarsView, NewCarView, CarsListView
 from accounts.views import register_view, login_view, logout_view
 
 urlpatterns = [

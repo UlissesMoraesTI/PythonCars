@@ -3,6 +3,7 @@ from cars.models import Car
 from cars.forms import CarModelForm #ModelForm
 #from cars.forms import CarForm
 from django.views import View
+from django.views.generic import ListView
 
 
 def cars_view(request):
@@ -28,6 +29,11 @@ class CarsView(View):
             'cars.html',
             {'cars': cars}
         )
+
+class CarsListView(ListView):
+    model = Car
+    template_name = 'cars.html'
+    context_object_name = 'cars'
 
 def new_car_view(request):
     if request.method == 'POST':
