@@ -27,7 +27,7 @@ urlpatterns = [
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
    #path('cars/', cars_view, name='cars_list'),
-    path('cars/', CarsView.as_view(), name='cars_list'),
+    path('cars/', CarsListView.as_view(), name='cars_list'),
    #path('new_car/', new_car_view, name='new_car'),
     path('new_car/', NewCarView.as_view(), name='new_car'),
     
