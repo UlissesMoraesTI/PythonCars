@@ -3,7 +3,7 @@ from cars.models import Car
 from cars.forms import CarModelForm #ModelForm
 #from cars.forms import CarForm
 from django.views import View
-from django.views.generic import ListView, CreateView, DetailView
+from django.views.generic import DeleteView, ListView, CreateView, DetailView, UpdateView
 
 
 def cars_view(request):
@@ -81,3 +81,19 @@ class CarDetailView(DetailView):
     template_name = 'car_detail.html'
     
     
+class CarUpdateView(UpdateView):
+    model = Car
+    form_class = CarModelForm
+    template_name = 'car_update.html'
+    success_url = '/cars/'
+
+class CarDeleteView(DeleteView):
+    model = Car
+    template_name = 'car_delete.html'
+    success_url = '/cars/'
+
+
+
+
+
+
