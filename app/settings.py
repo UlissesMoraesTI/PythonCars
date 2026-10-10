@@ -26,6 +26,10 @@ SECRET_KEY = 'django-insecure-=dx7t+%07z*03+00w@ads$#x@hjb4!n%#dj41sok!ua=4b$@rq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+TIME_ZONE = 'America/Sao_Paulo'
+USE_TZ = True
+
+
 ALLOWED_HOSTS = []
 
 
