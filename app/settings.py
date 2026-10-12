@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-=dx7t+%07z*03+00w@ads$#x@hjb4!n%#dj41sok!ua=4b$@rq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TIME_ZONE = 'America/Sao_Paulo'
+LANGUAGE_CODE = 'pt-br'
+TIME_ZONE = 'America/Campo Grande'
+USE_I18N = True
 USE_TZ = True
 
 
@@ -81,8 +83,12 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carros',
+        'USER': 'postgres',
+        'PASSWORD': 'Postgre1026BD',
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
